@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+:root {
+  --color-primary: #aa1945;
+  --color-secondary: #252525;
+  --custom-white: #f2f1f2;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f1f2;
+}
+
+.to-top {
+  background-color: var(--color-primary);
+  color: var(--custom-white);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  z-index: 99;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.my-nav {
+  height: 7rem;
+  line-height: 7rem;
+  background-color: var(--custom-white);
+}
+
+.my-nav ul a {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+}
+
+.my-nav a {
+  color: var(--color-secondary);
+}
+
+.sidenav ul a {
+  color: var(--color-secondary);
+}
+
+.brand-logo img {
+  height: 6.8rem;
+}
+
+.my-section {
+  padding-top: 5rem;
+}
+
+.contact-section {
+  padding: 5.6rem;
+}
+
+.title {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header {
+  font-weight: 300;
+}
+
+.main-btn {
+  background-color: var(--color-primary);
+}
+
+.main-btn:hover {
+  background-color: #d82a5e;
+}
+
+.subtitle {
+  color: var(--color-primary);
+}
+
+.us {
+  padding-top: 1rem;
+}
+
+.us-text {
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-img {
+  margin-bottom: 1rem;
+}
+
+.menu {
+  padding-top: 4rem;
+}
+
+li.indicator-item {
+  background-color: #d82a5e !important;
+}
+
+li.indicator-item.active {
+  background-color: var(--color-primary) !important;
+}
+
+.my-card {
+  width: 20rem;
+  height: 34.5rem;
+  background-color: #aa1945;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 2rem;
+}
+
+.my-card-title {
+  color: var(--custom-white);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.my-card-content {
+  color: var(--custom-white);
+  padding: 0 0.8rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.my-card-text {
+  color: var(--custom-white);
+}
+
+.valoration {
+  margin: 1rem 0;
+  color: var(--custom-white);
+  justify-self: end;
+}
+
+.lSSlideOuter .lSPager.lSpg > li:hover a,
+.lSSlideOuter .lSPager.lSpg > li.active a {
+  background-color: var(--color-primary) !important;
+}
+
+.lSSlideOuter .lSPager.lSpg > li:hover a,
+.lSSlideOuter .lSPager.lSpg > a {
+  background-color: #d82a5e !important;
+}
+
+.hashtag {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  border-left: 5px solid var(--color-primary) !important;
+}
+
+.testimonial {
+  font-size: 1.8rem;
+}
+
+.contact {
+  font-size: 1.1rem;
+}
+
+.contact-icon {
+  color: var(--color-primary);
+}
+
+.footer-img {
+  width: 10rem;
+}
+
+.copyright {
+  color: var(--custom-white);
+  font-size: 1.5rem;
+}
+
+.icons {
+  color: var(--custom-white);
+  font-size: 2rem;
+}
+
+.icons i {
+  margin: 0.5rem;
+}
+
+.page-footer {
+  background-color: var(--color-primary) !important;
+}
+
+@media screen and (max-width: 600px) {
+  .my-card-text {
+    display: none;
+  }
+
+  .my-card {
+    width: 11rem;
+    height: 25rem;
+    background-color: #aa1945;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-right: 10rem !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .my-card-text {
+    display: none;
+  }
+
+  .my-card {
+    width: 14rem;
+    height: 25rem;
+    background-color: #aa1945;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-right: 10rem !important;
+  }
+}
