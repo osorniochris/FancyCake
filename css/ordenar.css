@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+:root {
+  --color-primary: #aa1945;
+  --color-secondary: #252525;
+  --custom-white: #f2f1f2;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f1f2;
+}
+
+.my-nav {
+  height: 7rem;
+  line-height: 7rem;
+  background-color: var(--custom-white);
+}
+
+.my-nav ul a {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+}
+
+.my-nav a {
+  color: var(--color-secondary);
+}
+
+.sidenav ul a {
+  color: var(--color-secondary);
+}
+
+.brand-logo img {
+  height: 6.8rem;
+}
+
+.my-section {
+  padding-top: 5rem;
+}
+
+.title {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.total {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.formSection {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+span {
+  color: var(--color-secondary);
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: var(--color-primary) !important;
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid var(--color-primary) !important;
+}
+
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: var(--color-primary) !important;
+}
+/* label underline focus color */
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid var(--color-primary) !important;
+  box-shadow: 0 1px 0 0 var(--color-primary) !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: var(--color-primary) !important;
+}
+
+[type="checkbox"]:checked + span:not(.lever):before {
+  border-right: 2px solid var(--color-primary) !important;
+  border-bottom: 2px solid var(--color-primary) !important;
+}
+
+textarea.materialize-textarea:focus {
+  border-bottom: 1px solid var(--color-primary) !important;
+  box-shadow: 0 1px 0 0 var(--color-primary) !important;
+}
+
+.main-btn {
+  background-color: var(--color-primary);
+}
+
+.main-btn:hover {
+  background-color: #d82a5e;
+}

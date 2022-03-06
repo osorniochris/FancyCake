@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hacer pedido</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/imgs/icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/ordenar.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/8dbc753c5a.css" />
+  </head>
+  <body>
+    <header id="inicio">
+      <nav class="my-nav">
+        <div class="nav-wrapper container">
+          <a href="./index.html" class="brand-logo"
+            ><img src="./assets/imgs/logo.png" alt="Logo"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="form-section" class="my-section">
+      <div class="container">
+        <h2 class="title">Arma tu pastel ideal</h2>
+
+        <form action="#" class="col s12 m8">
+          <section id="cakeSize" class="formSection">
+            <p class="subtitle">Elija el tamaño de su pastel</p>
+            <p>
+              <label>
+                <input
+                  name="groupSize"
+                  type="radio"
+                  checked
+                  class="with-gap my-radio"
+                />
+                <span>Pequeño (1kg)</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input
+                  name="groupSize"
+                  type="radio"
+                  class="with-gap my-radio"
+                />
+                <span>Mediano (5kg)</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input
+                  class="with-gap my-radio"
+                  name="groupSize"
+                  type="radio"
+                />
+                <span>Grande (10kg)</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input
+                  name="groupSize"
+                  type="radio"
+                  class="with-gap my-radio"
+                />
+                <span>Personalizado </span>
+              </label>
+            </p>
+            <div class="row">
+              <div class="col s12">
+                <div class="input-field inline">
+                  <input id="customSize" type="text" />
+                  <label for="customSize" class="active"
+                    >Tamaño personalizado</label
+                  >
+                </div>
+                Kg
+              </div>
+            </div>
+          </section>
+          <section id="cakeRecipe" class="formSection">
+            <p class="subtitle">
+              Elija la receta de su pastel (puede combinar a su gusto), se
+              indica precio por Kg
+            </p>
+            <div class="row">
+              <div class="col s6 m4">
+                <p>
+                  <label>
+                    <input type="checkbox" id="choco" />
+                    <span>Clásico chocolate ($100)</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s6 m4">
+                <p>
+                  <label>
+                    <input type="checkbox" id="cheese" />
+                    <span>Cheesecake ($120)</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s6 m4">
+                <p>
+                  <label>
+                    <input type="checkbox" id="tres" />
+                    <span>Tres Leches ($80)</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s6 m4">
+                <p>
+                  <label>
+                    <input type="checkbox" id="cumple" />
+                    <span>Cumpleaños ($90)</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s6 m4">
+                <p>
+                  <label>
+                    <input type="checkbox" id="imposible" />
+                    <span>Imposible ($70)</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+            <p>*Sujeto a disponibilidad</p>
+          </section>
+          <section id="cakeDecoration" class="formSection">
+            <p class="subtitle">Elija decoraciones para su pastel</p>
+            <div class="row">
+              <div class="col s6 m4">
+                <p>
+                  <label>
+                    <input type="checkbox" id="mensaje" />
+                    <span>Mensaje personalizado ($100)</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s6 m4">
+                <p>
+                  <label>
+                    <input type="checkbox" id="fondant" />
+                    <span>Fondant ($200)</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s6 m4">
+                <p>
+                  <label>
+                    <input type="checkbox" id="velas" />
+                    <span>Velas de cumpleaños ($50)</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="cakeDescription" class="formSection">
+            <p class="subtitle">Descripción general o consideraciones</p>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="des" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+          </section>
+          <section id="contact" class="formSection">
+            <p class="subtitle">Información de contacto</p>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix active">account_circle</i>
+                <input id="name" type="text" class="validate" />
+                <label for="name" class="active">Nombre del cliente</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix active">mail</i>
+                <input id="mail" type="text" class="validate" />
+                <label for="mail" class="active">Correo electrónico</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix active">phone</i>
+                <input id="phone" type="text" class="validate" />
+                <label for="phone" class="active">Teléfono de contacto</label>
+              </div>
+            </div>
+          </section>
+          <section id="confirm" class="formSection">
+            <p class="total">Total $0.0</p>
+            <button
+              class="btn waves-effect waves-light main-btn"
+              type="submit"
+              name="action"
+            >
+              Confirmar pedido
+              <i class="material-icons right">send</i>
+            </button>
+          </section>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
