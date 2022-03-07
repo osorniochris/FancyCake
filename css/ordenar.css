@@ -103,10 +103,49 @@ textarea.materialize-textarea:focus {
   box-shadow: 0 1px 0 0 var(--color-primary) !important;
 }
 
+input.datepicker:focus {
+  border-bottom: 1px solid var(--color-primary) !important;
+  box-shadow: 0 1px 0 0 var(--color-primary) !important;
+}
+
 .main-btn {
   background-color: var(--color-primary);
 }
 
 .main-btn:hover {
   background-color: #d82a5e;
+}
+
+.datepicker-date-display {
+  background-color: var(--color-primary);
+}
+
+span.date-text {
+  color: #fff !important;
+}
+
+.datepicker-cancel,
+.datepicker-clear,
+.datepicker-today,
+.datepicker-done {
+  color: var(--color-primary);
+}
+
+.datepicker-table td.is-today {
+  color: var(--color-primary);
+}
+
+.datepicker-table td.is-selected {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.month-prev,
+.month-next {
+  background-color: transparent;
+}
+
+.month-prev:active,
+.month-next:active {
+  background-color: var(--color-primary);
 }
