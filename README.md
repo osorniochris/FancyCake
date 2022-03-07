@@ -22,3 +22,8 @@ Segunda práctica de 'Launch X. Frontend Mission'
 - Maquetación de páginas del pastelero.
 
 Disponible [aquí](https://fancy-cake.netlify.app/)
+Las rutas disponibles dentro del proyecto son:
+
+- [/](https://fancy-cake.netlify.app/)
+- [/pastelero.html](https://fancy-cake.netlify.app/pastelero.html)
+- [/ordenar.html](https://fancy-cake.netlify.app/ordenar.html)
