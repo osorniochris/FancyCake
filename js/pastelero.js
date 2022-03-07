@@ -21,5 +21,5 @@ window.addEventListener("scroll", () => {
 $("document").ready(function () {
   const name = prompt("¿Cuál es tu nombre?");
 
-  document.getElementById("welcome-name").innerHTML = `!Bienvenido ${name}!`;
+  document.getElementById("welcome-name").innerHTML = `¡Bienvenido ${name}!`;
 });
